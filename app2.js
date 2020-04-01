@@ -1,16 +1,21 @@
 var fullName = localStorage.getItem("full-name");
 var userId = localStorage.getItem("id-name");
+var propic = localStorage.getItem("pro-pic");
 var projectList = [];
 
 function load() {
   if (fullName == null || userId == null) {
     document.getElementById("app").style.display = "none";
     document.getElementById("warning").style.display = "block";
-  } else {
-    document.getElementById("full-name-tag").textContent =
-      "Welcome back, " + fullName;
+  } else {    
+    document.getElementById("full-name-tag").textContent = fullName;
     document.getElementById("user-id-tag").textContent = "(" + userId + ")";
     document.getElementById("warning").style.display = "none";
+    if(propic==""){
+
+    }else{
+      document.getElementById("pro-pic").src = propic;
+    }
     window.document.title = userId;
   }
 
