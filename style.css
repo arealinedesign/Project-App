@@ -102,6 +102,19 @@ nav {
   border: 1px solid black;
 }
 
+.propic{
+  width: 100px;
+  height: 100px;
+}
+
+.pro-show-infos{
+  display: flex;
+}
+
+.pro-show-info{
+  margin-left: 5px;
+}
+
 nav button {
   margin: 10px;
 }
