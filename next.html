@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Maven+Pro&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body id="next-body">
+    <div id="trans" class="">
+      <div
+        id="warning"
+        style="padding-top: 20%; align-items: center; text-align: center; height: 100vh;"
+      >
+        <h1>Please Login to enter your account</h1>
+      </div>
+      <section id="app">
+        <nav>
+          <div>
+            <h1 id="full-name-tag"></h1>
+            <h3 id="user-id-tag"></h3>
+          </div>
+          <div>
+            <button class="button" id="home">Home</button>
+            <button class="button" id="show-projects">Pojects</button>
+            <button class="button" id="show-profile">Profile</button>
+            <button class="button" id="logout">Logout</button>
+          </div>
+        </nav>
+
+        <div class="loading-div">
+          <div id="loading"></div>
+        </div>
+
+        <div class="project-table">
+          <div
+            style="display: flex; justify-content: space-around; align-items: center;"
+          >
+            <input
+              type="search-input"
+              id="project-search-input"
+              placeholder="Search Project"
+            />
+            <button class="button" id="new-project">
+              + New Project
+            </button>
+          </div>
+          <div style="overflow-x: auto;">
+            <table class="table table-hover table-dark">
+              <tr>
+                <th>#</th>
+                <th>Company Name</th>
+                <th>Date</th>
+                <th>Project Name</th>
+                <th>Contactor Name</th>
+                <th>Eastimated Amount</th>
+                <th>Work Order Amount</th>
+              </tr>
+              <tbody id="project-table-body"></tbody>
+            </table>
+          </div>
+        </div>
+
+        <div id="profile-show" class="profile">
+          <h1>Full Name: Akash</h1>
+          <h1>Nick Name: akash</h1>
+          <h1>bday: 29th july</h1>
+        </div>
+
+        <div id="newproject-iframe" class="new-project-iframe">
+          <iframe
+            id="theiframe"
+            src="https://script.google.com/macros/s/AKfycbw7feQxDUk22Roq8SxppiN8UOq16Lg0ylUd0x3ZNa4fkqwy6eVP/exec?v=newproject"
+            width="100%"
+            height="500px"
+            frameborder="0"
+          ></iframe>
+        </div>
+      </section>
+    </div>
+
+    <script src="./app2.js"></script>
+  </body>
+</html>
