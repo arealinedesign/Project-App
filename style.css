@@ -232,3 +232,18 @@ html.is-animating .transition-fade {
     transform: translateX(0%);
   }
 }
+
+
+@media screen and (max-width:768px){
+
+  .pro-show-infos{
+    flex-direction: column;
+    width: 100%;
+    padding-left: 10px;    
+  }
+
+  .pro-show-info{
+    margin-left: 0;
+  }
+
+}
