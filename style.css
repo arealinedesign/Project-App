@@ -245,5 +245,9 @@ html.is-animating .transition-fade {
   .pro-show-info{
     margin-left: 0;
   }
+  
+    .button-grp{
+    width: 50%;
+  }
 
 }
