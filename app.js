@@ -3,7 +3,7 @@ function loadData(u, p) {
 
   request.open(
     "get",
-    "https://script.google.com/macros/s/AKfycbw7feQxDUk22Roq8SxppiN8UOq16Lg0ylUd0x3ZNa4fkqwy6eVP/exec"
+    "https://script.google.com/macros/s/AKfycbzDyg8MWjtAk0RSe6udRXqZiei3TmaNtlMnSnMc5A_UFrCDHa4/exec"
   );
 
   request.onload = () => {
