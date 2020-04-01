@@ -23,6 +23,7 @@ function populateData(json, userid, password) {
   var userFound = false;
   var fullName = "";
   var id = "";
+  var propic = '';
 
   for (var i = 0; i < json.user.length; i++) {
     if (json.user[i].id === userid) {
@@ -31,6 +32,7 @@ function populateData(json, userid, password) {
         userWithPass = true;
         fullName = json.user[i].name;
         id = json.user[i].id;
+        propic = json.user[i].propic;
         break;
       } else {
         document.getElementById("loading").style.display = "none";
@@ -52,6 +54,7 @@ function populateData(json, userid, password) {
       document.getElementById("login-body").classList.add("overflow");
       localStorage.setItem("full-name", fullName);
       localStorage.setItem("id-name", id);
+      localStorage.setItem("pro-pic",propic);
       setTimeout(() => {
         window.document.location = "./next.html";
       }, 500);
