@@ -82,3 +82,17 @@ document.getElementById("trans").classList.add("transition-slide-in");
 setTimeout(() => {
   document.getElementById("login-body").classList.remove("overflow");
 }, 500);
+
+
+var fname = localStorage.getItem("full-name");
+var idname = localStorage.getItem("id-name");
+var propic = localStorage.getItem("pro-pic");
+
+
+if(fname == null && idname == null && propic == null){
+
+}else{
+
+  window.document.location = "./next.html";
+
+}
