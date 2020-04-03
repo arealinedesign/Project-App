@@ -99,7 +99,7 @@ nav {
   align-items: center;
   padding-top: 2rem;
   padding-bottom: 2rem;
-  border: 1px solid black;
+  border-bottom: 1px solid black;
 }
 
 .propic{
