@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Login</title>
+    <link rel="stylesheet" href="./loader.css">
     <link
       href="https://fonts.googleapis.com/css?family=Maven+Pro&display=swap"
       rel="stylesheet"
@@ -12,6 +13,7 @@
     <link rel="stylesheet" href="./style.css" />
   </head>
   <body id="login-body">
+
     <div id="trans" class="main">
       <h3>LOGIN</h3>
       <input type="text" id="user-name" placeholder="User ID" />
@@ -19,7 +21,12 @@
       <input type="submit" value="Login" id="btn" class="button" />
 
       <div class="warning-user">
-        <div id="loading"></div>
+        <div id="loading">
+          <div class="sk-cube1 sk-cube"></div>
+          <div class="sk-cube2 sk-cube"></div>
+          <div class="sk-cube4 sk-cube"></div>
+          <div class="sk-cube3 sk-cube"></div>
+        </div>
         <h3 class="war"></h3>
       </div>
     </div>
