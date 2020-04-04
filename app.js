@@ -52,9 +52,11 @@ function populateData(json, userid, password) {
       document.getElementById("trans").classList.remove("transition-slide-in");
       document.getElementById("trans").classList.add("transition-slide-out");
       document.getElementById("login-body").classList.add("overflow");
+      var isLogged = document.getElementById("keep").checked;
       localStorage.setItem("full-name", fullName);
       localStorage.setItem("id-name", id);
       localStorage.setItem("pro-pic",propic);
+      localStorage.setItem("keep-log",isLogged);
       setTimeout(() => {
         window.document.location = "./next.html";
       }, 500);
@@ -87,12 +89,17 @@ setTimeout(() => {
 var fname = localStorage.getItem("full-name");
 var idname = localStorage.getItem("id-name");
 var propic = localStorage.getItem("pro-pic");
+var isLogged = localStorage.getItem("keep-log");
 
 
 if(fname == null && idname == null && propic == null){
 
 }else{
 
-  window.document.location = "./next.html";
+  if(isLogged=="true"){
+    window.document.location = "./next.html";
+  }
+
+  
 
 }
