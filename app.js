@@ -100,6 +100,4 @@ if(fname == null && idname == null && propic == null){
     window.document.location = "./next.html";
   }
 
-  
-
 }
