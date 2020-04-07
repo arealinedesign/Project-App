@@ -90,7 +90,7 @@ function buildArray(data) {
   var trs = document.querySelectorAll("tr[data-id]");
   console.log(trs);
   trs.forEach(row => {
-    row.addEventListener("click", () => {
+    row.addEventListener("click", () => {      
       localStorage.setItem("project-id", row.dataset.id);
       window.document.location = "./openproject.html";
     });
