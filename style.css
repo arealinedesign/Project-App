@@ -66,6 +66,20 @@ body {
   margin-top: 10px;
 }
 
+#loading-pr {
+  width: 20px;
+  height: 20px;
+  
+  -webkit-transform: rotateZ(45deg);
+          transform: rotateZ(45deg);
+}
+
+.loading-div-pr {
+  margin-top: 10%;
+  margin-left: 50%;
+  height: 25px;
+}
+
 #loading {
   display: none;
   width: 20px;
@@ -83,7 +97,7 @@ body {
 }
 
 
-#loading .sk-cube {
+.sk-cube {
   float: left;
   width: 50%;
   height: 50%;
@@ -92,7 +106,7 @@ body {
       -ms-transform: scale(1.1);
           transform: scale(1.1); 
 }
-#loading .sk-cube:before {
+.sk-cube:before {
   content: '';
   position: absolute;
   top: 0;
@@ -106,27 +120,27 @@ body {
       -ms-transform-origin: 100% 100%;
           transform-origin: 100% 100%;
 }
-#loading .sk-cube2 {
+ .sk-cube2 {
   -webkit-transform: scale(1.1) rotateZ(90deg);
           transform: scale(1.1) rotateZ(90deg);
 }
-#loading .sk-cube3 {
+ .sk-cube3 {
   -webkit-transform: scale(1.1) rotateZ(180deg);
           transform: scale(1.1) rotateZ(180deg);
 }
-#loading .sk-cube4 {
+ .sk-cube4 {
   -webkit-transform: scale(1.1) rotateZ(270deg);
           transform: scale(1.1) rotateZ(270deg);
 }
-#loading .sk-cube2:before {
+ .sk-cube2:before {
   -webkit-animation-delay: 0.3s;
           animation-delay: 0.3s;
 }
-#loading .sk-cube3:before {
+ .sk-cube3:before {
   -webkit-animation-delay: 0.6s;
           animation-delay: 0.6s; 
 }
-#loading .sk-cube4:before {
+ .sk-cube4:before {
   -webkit-animation-delay: 0.9s;
           animation-delay: 0.9s;
 }
@@ -312,6 +326,39 @@ html.is-animating .transition-fade {
   }
 }
 
+
+
+/* Openning Project */
+
+.heading{
+  border-bottom: 1px solid black;
+  margin-top: 2rem;
+}
+
+#project-name{
+  margin-bottom: 1rem;
+  margin-left: 1rem;
+}
+
+#info-list{
+  margin-left: 1rem;
+}
+
+
+#info-list li{
+ margin-top: 2rem;
+ list-style: none;
+}
+
+.button-grp-pr{
+  margin-left: 1rem;
+  margin-top: 2rem;
+}
+
+
+.hidden{
+  display: none;
+}
 
 @media screen and (max-width:768px){
 
