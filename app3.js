@@ -39,7 +39,7 @@ function populateData(data) {
 function buildHtml(data){
 
   loading.style.display = "none";
-  heading.style.display = "block";
+  heading.style.display = "flex";
   document.querySelector(".hidden").style.display = "block";
   
   projectName.textContent ="#" + data.ser +" " + data.projectname;
